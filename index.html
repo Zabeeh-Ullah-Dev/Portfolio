@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zabeeh Ullah — Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Bodoni+Moda:ital,wght@0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="vine">
+  <svg viewBox="0 0 70 2000" preserveAspectRatio="none">
+    <path id="vinePath" d="M35 0 C 55 150, 15 300, 35 450 S 55 750, 35 900 S 15 1200, 35 1350 S 55 1650, 35 1800 S 20 1950, 35 2000"/>
+    <circle id="vd1" cx="35" cy="450" r="4"/>
+    <circle id="vd2" cx="35" cy="900" r="4"/>
+    <circle id="vd3" cx="35" cy="1350" r="4"/>
+    <circle id="vd4" cx="35" cy="1800" r="4"/>
+  </svg>
+</div>
+
+<header>
+  <div class="logo">
+    <img class="logo-dark" src="assets/logo-dark.png" alt="Zabeeh Ullah signature logo">
+    <img class="logo-light" src="assets/logo-light.png" alt="Zabeeh Ullah signature logo">
+  </div>
+  <nav id="navMenu">
+    <ul>
+      <li><a href="#about" onclick="closeMenu()">About</a></li>
+      <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+      <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+      <li><a href="#education" onclick="closeMenu()">Education</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="navbar-right">
+    <div class="toggle" id="themeToggle" role="button" aria-label="Toggle dark and light mode">
+      <div class="knob" id="knob">🌙</div>
+    </div>
+    <button id="menuBtn" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow mono">$ whoami</span>
+      <h1><span class="name">Zabeeh Ullah</span>builds things <span class="accent">that grow.</span></h1>
+      <div class="typed-line mono"><span id="typedText"></span><span class="cursor">|</span></div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects →</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo">
+        <img src="assets/photo.jpg" alt="Zabeeh Ullah">
+      </div>
+      <div class="photo-tag mono">📍 Charsadda, Pakistan</div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <span class="label mono">// 01 — about</span>
+  <h2 class="section-title reveal">Rooted in fundamentals, growing into full-stack.</h2>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>I'm a 5th-semester BS Computer Science student at City University of Science and Information Technology, Peshawar, and a freelance web developer. I like building things that are simple on the surface and solid underneath — clean interfaces backed by databases that actually make sense.</p>
+      <p>My work spans front-end builds with HTML, CSS, Bootstrap and JavaScript, through to WordPress sites and custom PHP/MySQL backends. I care about writing code a client's next developer won't wince at.</p>
+      <div class="stat-row">
+        <div class="stat"><b>3.67</b><span>CGPA / 4.00</span></div>
+        <div class="stat"><b>6+</b><span>Technologies in daily use</span></div>
+      </div>
+    </div>
+    <div class="growth-list reveal">
+      <div class="growth-item">
+        <div class="growth-dot"></div>
+        <div><h4>Diploma in Information Technology</h4><p>753/1000 — Charsadda Institute of Technology. Where the fundamentals were laid.</p></div>
+      </div>
+      <div class="growth-item">
+        <div class="growth-dot"></div>
+        <div><h4>Front-end craft</h4><p>HTML, CSS, Bootstrap and JavaScript — building responsive interfaces that hold up on any screen.</p></div>
+      </div>
+      <div class="growth-item">
+        <div class="growth-dot"></div>
+        <div><h4>WordPress & CMS</h4><p>Theme customization, plugin setup, and client-ready content management.</p></div>
+      </div>
+      <div class="growth-item">
+        <div class="growth-dot"></div>
+        <div><h4>Backend with PHP & MySQL</h4><p>Turning static pages into working systems — forms that save, data that persists.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <span class="label mono">// 02 — skills</span>
+  <h2 class="section-title reveal">What I ship with.</h2>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-top"><h4>HTML & CSS</h4><span class="skill-level">Strong</span></div>
+      <div class="bar"><div class="bar-fill" data-level="90"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-top"><h4>Bootstrap</h4><span class="skill-level">Strong</span></div>
+      <div class="bar"><div class="bar-fill" data-level="85"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-top"><h4>JavaScript</h4><span class="skill-level">Growing</span></div>
+      <div class="bar"><div class="bar-fill" data-level="70"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-top"><h4>WordPress</h4><span class="skill-level">Strong</span></div>
+      <div class="bar"><div class="bar-fill" data-level="80"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-top"><h4>PHP</h4><span class="skill-level">Growing</span></div>
+      <div class="bar"><div class="bar-fill" data-level="68"></div></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-top"><h4>MySQL</h4><span class="skill-level">Growing</span></div>
+      <div class="bar"><div class="bar-fill" data-level="65"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <span class="label mono">// 03 — projects</span>
+  <h2 class="section-title reveal">Selected work.</h2>
+  <div class="proj-grid">
+    <div class="proj-card reveal">
+      <div class="proj-top"><div class="proj-icon">🍰</div><span class="proj-status">Live demo</span></div>
+      <h3>Bakery Landing Page</h3>
+      <p>A single-page responsive site for a local bakery — hero, menu highlights, testimonials and a contact form with smooth-scroll navigation.</p>
+      <div class="proj-tags"><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JS</span></div>
+      <a href="#" class="proj-link">View project →</a>
+    </div>
+    <div class="proj-card reveal">
+      <div class="proj-top"><div class="proj-icon">🏢</div><span class="proj-status">WordPress</span></div>
+      <h3>Business Website (5 pages)</h3>
+      <p>A full WordPress build — Home, About, Services, Blog and Contact — with a customized theme, SEO basics and a working contact form.</p>
+      <div class="proj-tags"><span>WordPress</span><span>Elementor</span><span>SEO</span></div>
+      <a href="#" class="proj-link">View project →</a>
+    </div>
+    <div class="proj-card reveal">
+      <div class="proj-top"><div class="proj-icon">🗂️</div><span class="proj-status">Full-stack</span></div>
+      <h3>Student Management System</h3>
+      <p>A CRUD admin panel with login, add/edit/delete records, search and pagination, backed by a MySQL database.</p>
+      <div class="proj-tags"><span>PHP</span><span>MySQL</span><span>Bootstrap</span></div>
+      <a href="#" class="proj-link">View project →</a>
+    </div>
+    <div class="proj-card reveal">
+      <div class="proj-top"><div class="proj-icon">🛒</div><span class="proj-status">In progress</span></div>
+      <h3>Mini E-commerce Catalog</h3>
+      <p>A product listing and cart flow with a PHP/MySQL backend — built to show how a small store could actually run online.</p>
+      <div class="proj-tags"><span>PHP</span><span>MySQL</span><span>JS</span></div>
+      <a href="#" class="proj-link">View project →</a>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <span class="label mono">// 04 — education</span>
+  <h2 class="section-title reveal">The timeline so far.</h2>
+  <div class="timeline reveal">
+    <div class="tl-item">
+      <div class="tl-date mono">Sep 2024 — Present</div>
+      <h4>BS Computer Science</h4>
+      <p>City University of Science and Information Technology, Peshawar — CGPA 3.67/4.00, 5th Semester.</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date mono">Jan 2024 — Dec 2024</div>
+      <h4>Diploma in Information Technology (DIT)</h4>
+      <p>Charsadda Institute of Technology, Mandani — Score: 753/1000.</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date mono">Jun 2021 — Jun 2023</div>
+      <h4>FSc (Pre-Engineering)</h4>
+      <p>MM College Peshawar, Peshawar.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-box reveal">
+    <span class="label mono">// 05 — contact</span>
+    <h2>Have a project in mind?<br>Let's build it together.</h2>
+    <p>I'm currently taking on entry-level freelance work — landing pages, WordPress builds, and small PHP/MySQL applications.</p>
+    <div class="contact-links">
+      <a href="mailto:zabeehullah2005@gmail.com" class="btn btn-primary">✉ Email Me</a>
+      <a href="tel:+923070509981" class="btn btn-outline">📞 +92 307 0509981</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Zabeeh Ullah — Built with HTML, CSS &amp; JavaScript.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
