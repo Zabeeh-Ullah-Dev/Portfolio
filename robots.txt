@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zabeeh-ullah.netlify.app/sitemap.xml
