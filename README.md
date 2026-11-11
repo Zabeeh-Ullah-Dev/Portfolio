@@ -2,6 +2,12 @@
 
 Portfolio of Zabeeh Ullah, Software and Web Developer in Pakistan — projects built with JavaScript, React, Node.js, HTML, CSS, and WordPress.
 
+## Preview
+
+![Preview](assets/preview.png)
+
+[Live version](https://zabeeh-ullah.netlify.app/)
+
 ## Run it
 
 Open `index.html` in a browser. There is no build step.
